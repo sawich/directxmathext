@@ -26,11 +26,20 @@ void main()
         XMVECTOR V = XMVectorMultiplyAdd( V1, V2, V3 );
         printvector( L"V1*V2+V3", V );
 
+        V = XMVectorNegativeMultiplySubtract( V1, V2, V3 );
+        printvector( L"V3-V1*V2", V );
+
         XMMATRIX M = XMMatrixMultiply( M1, M2 );
         printvector( L"\nM1*M2[0]", M.r[0] );
         printvector( L"M1*M2[1]", M.r[1] );
         printvector( L"M1*M2[2]", M.r[2] );
         printvector( L"M1*M2[3]", M.r[3] );
+
+        M = XMMatrixMultiplyTranspose( M1, M2 );
+        printvector( L"\nT(M1*M2[0])", M.r[0] );
+        printvector( L"T(M1*M2[1])", M.r[1] );
+        printvector( L"T(M1*M2[2])", M.r[2] );
+        printvector( L"T(M1*M2[3])", M.r[3] );
 
         XMVECTOR VT2 = XMVector2Transform( V1, M );
         printvector( L"\nVT2\n", VT2 );
@@ -57,11 +66,20 @@ void main()
         XMVECTOR V = FMA4::XMVectorMultiplyAdd( V1, V2, V3 );
         printvector( L"V1*V2+V3", V );
 
+        V = FMA4::XMVectorNegativeMultiplySubtract( V1, V2, V3 );
+        printvector( L"V3-V1*V2", V );
+
         XMMATRIX M = FMA4::XMMatrixMultiply( M1, M2 );
         printvector( L"\nM1*M2[0]", M.r[0] );
         printvector( L"M1*M2[1]", M.r[1] );
         printvector( L"M1*M2[2]", M.r[2] );
         printvector( L"M1*M2[3]", M.r[3] );
+
+        M = FMA4::XMMatrixMultiplyTranspose( M1, M2 );
+        printvector( L"\nT(M1*M2[0])", M.r[0] );
+        printvector( L"T(M1*M2[1])", M.r[1] );
+        printvector( L"T(M1*M2[2])", M.r[2] );
+        printvector( L"T(M1*M2[3])", M.r[3] );
 
         XMVECTOR VT2 = FMA4::XMVector2Transform( V1, M );
         printvector( L"\nVT2\n", VT2 );
