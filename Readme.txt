@@ -4,7 +4,7 @@ DirectXMath Extensions
 
 Copyright (c) Microsoft Corporation. All rights reserved.
 
-June 2, 2015
+June 3, 2015
 
 This package contains headers for advanced instruction set variants of DirectXMath routines for use in Windows applications in guarded code-paths.
 
@@ -55,7 +55,7 @@ https://github.com/walbourn/directxmathext
 RELEASE HISTORY
 ---------------
 
-June 2, 2015
+June 3, 2015
     AVX2 header
     Added FMA implementations of XMVectorNegativeMultiplySubtract, XMMatrixMultiplyTranspose
 

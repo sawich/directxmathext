@@ -17,8 +17,8 @@
 #error AVX2 not supported on ARM platform
 #endif
 
-#if defined(_MSC_VER) && (_MSC_VER < 1600)
-#error AVX2 intrinsics requires Visual C++ 2010 Service Pack 1 or later.
+#if defined(_MSC_VER) && (_MSC_VER < 1700)
+#error AVX2 intrinsics requires Visual C++ 2012 or later.
 #endif
 
 #pragma warning(push)
