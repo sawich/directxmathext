@@ -49,7 +49,7 @@ All content and source code for this package are subject to the terms of the MIT
 
 For the latest version and documentation, please visit the GitHub site.
 
-https://github.com/walbourn/directxmathext
+http://go.microsoft.com/fwlink/?LinkID=615560
 
 ---------------
 RELEASE HISTORY
